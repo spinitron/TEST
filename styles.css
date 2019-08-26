@@ -1,6 +1,8 @@
 .test-website .mdl-layout-title {
   font-weight: 600;
   font-size: 200%;
+  color: white;
+  text-decoration: none;
 }
 .test-website main > .mdl-layout__tab-panel {
   padding: 8px;

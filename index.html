@@ -1,20 +1,4 @@
 <!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
 <html lang="en">
 
 <head>
@@ -44,20 +28,20 @@
   </style>
 </head>
 
-<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<body class="test-website mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
   <div class="mdl-layout mdl-js-layout">
     <header class="mdl-layout__header mdl-layout__header--scroll">
       <div class="mdl-layout__header-row">
         <!-- Title -->
-        <span class="mdl-layout-title">TEST 90.3 Barton PA</span>
+        <a class="mdl-layout-title" href="https://spinitron.github.io/TEST/">TEST 90.3 Barton PA</span>
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation -->
         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">About</a>
-            <a class="mdl-navigation__link" href="">On-air</a>
-            <a class="mdl-navigation__link" href="">Programs</a>
-          <a class="mdl-navigation__link" href="">Contact</a>
+          <a class="mdl-navigation__link" href="https://spinitron.github.io/TEST/">About</a>
+          <a class="mdl-navigation__link" href="https://spinitron.com/TEST/?layout=1">On-air</a>
+          <a class="mdl-navigation__link" href="https://spinitron.com/TEST/calendar?layout=1">Programs</a>
+          <a class="mdl-navigation__link" href="https://spinitron.github.io/TEST/">Contact</a>
         </nav>
       </div>
     </header>
@@ -74,6 +58,19 @@
     <main class="mdl-layout__content">
       <div class="mdl-layout__tab-panel is-active" id="overview">
         <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text">
+              <h4>TEST 90.3 FM, The Voice of Foo Community College, Bartion PA, USA</h4>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+            </div>
+          </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
           <header
             class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
             <i class="material-icons">play_circle_filled</i>
@@ -83,7 +80,7 @@
             <div class="mdl-card__supporting-text">
               <h4>On-air</h4>
               <div class="spinitron-js-widget" data-action="now-playing-v2" data-station="wzbc"></div>
-<script src="//spinitron.com/static/js/widget.js"></script>
+              <script src="//spinitron.com/static/js/widget.js"></script>
             </div>
             <div class="mdl-card__actions">
               <a href="#" class="mdl-button">See more</a>
@@ -92,18 +89,17 @@
         </section>
 
         <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text">
-                <h4>Coming up</h4>
-                <div data-station="wzbc" data-count="5" data-action="upcoming-shows" class="spinitron-js-widget"></div>
-<script async src="//spinitron.com/static/js/widget.js"></script>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">See full schedule</a>
-              </div>
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text">
+              <h4>Coming up</h4>
+              <div data-station="wzbc" data-count="5" data-action="upcoming-shows" class="spinitron-js-widget"></div>
+              <script async src="//spinitron.com/static/js/widget.js"></script>
             </div>
-          </section>
-
+            <div class="mdl-card__actions">
+              <a href="#" class="mdl-button">Full schedule</a>
+            </div>
+          </div>
+        </section>
       </div>
 
       <footer class="mdl-mega-footer">

@@ -114,7 +114,8 @@
     max-width: 860px;
 }
 
-.test-website section>header {
+.test-website section>header,
+.test-website section>a.section__play-btn {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -126,12 +127,18 @@
     justify-content: center;
 }
 
+.test-website section>a.section__play-btn {
+    text-decoration: none;
+    color: inherit;
+}
+
 .test-website section>.section__play-btn {
     text-align: center;
     min-height: 200px;
 }
 
-.test-website section>header>.material-icons {
+.test-website section>header>.material-icons,
+.test-website section>a.section__play-btn>.material-icons {
     font-size: 3rem;
 }
 

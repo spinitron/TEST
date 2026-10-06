@@ -14,12 +14,12 @@ On-air and Programs wrap Spinitron public pages in `custom-layout.html` (`{{SPIN
 
 Similar but outbound links go to Spinitron's [listener app](https://forum.spinitron.com/t/spinitron-listener-app-listen-to-radio-streams-while-browsing-playlists-schedules-etc/1820).
 
-Links to the listener app go to `STATION.q.spinitron.com`, e.g. `wzbc.q.spinitron.com`. If your station has spaces in its Spinitron ID, use hephens.
+Links to the listener app go to `STATION.q.spinitron.com`, e.g. `wzbc.q.spinitron.com`. If your station has spaces in its Spinitron ID, use hyphens.
 
 You can add query params `laf_css` and `return_url`. Use `laf_css` to link a custom stylesheet and `return_url` is how the visitor navigates back to your web site from the listener app. Both must be percent encoded. For example:
 
 ```
-https://test.q.spinitron.com/?laf_css=https%3A%2F%2Fwww.testradio.org%2Ftestradio.css&return_url=https%3A%2F%2Fwww.testradio.org%2Fspa.html
+https://test.q.spinitron.com/?laf_css=https%3A%2F%2Fraw.githubusercontent.com%2Fspinitron%2FTEST%2Frefs%2Fheads%2Fmaster%2Ftestradio.css&return_url=https%3A%2F%2Fwww.testradio.org%2Fspa.html
 ```
 
 The listener app has a number of named stock stylesheets which you can select with query param `laf`. `testradio` is one of the stock, see [docs](https://forum.spinitron.com/t/spinitron-listener-app-listen-to-radio-streams-while-browsing-playlists-schedules-etc/1820#p-3748-look-and-feel-laf-11) for the others.
@@ -28,4 +28,4 @@ The listener app has a number of named stock stylesheets which you can select wi
 https://test.q.spinitron.com/?laf=testradio&return_url=https%3A%2F%2Fwww.testradio.org%2Fspa.html
 ```
 
-`testradio.css` on this host is the https file `laf_css` fetches.
+`laf_css` fetches [the raw file on GitHub](https://raw.githubusercontent.com/spinitron/TEST/refs/heads/master/testradio.css).
